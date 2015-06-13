@@ -1,0 +1,22 @@
+@mixin center($width: 990px) {
+    margin: 0 auto;
+    max-width: $width;
+    padding: 0 15px;
+}
+
+@mixin clearfix {
+    &:before,
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+
+@mixin not-selectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}

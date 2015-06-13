@@ -1,0 +1,47 @@
+@mixin kredito_sprite {
+    background-image: url("../images/_sprite.png");
+    background-repeat: no-repeat;
+    
+}
+
+@mixin kredito-sprite-benefit-workhours {
+    @include kredito_sprite;
+    background-position: 0 0;
+    height: 135px;
+    width: 135px;
+}
+
+@mixin kredito-sprite-benefit-time {
+    @include kredito_sprite;
+    background-position: -135px 0;
+    height: 135px;
+    width: 135px;
+}
+
+@mixin kredito-sprite-benefit-online {
+    @include kredito_sprite;
+    background-position: 0 -135px;
+    height: 135px;
+    width: 135px;
+}
+
+@mixin kredito-sprite-arrow-right {
+    @include kredito_sprite;
+    background-position: -135px -135px;
+    height: 45px;
+    width: 45px;
+}
+
+@mixin kredito-sprite-arrow-left {
+    @include kredito_sprite;
+    background-position: -180px -135px;
+    height: 45px;
+    width: 45px;
+}
+
+@mixin kredito-sprite-menu {
+    @include kredito_sprite;
+    background-position: -225px -135px;
+    height: 20px;
+    width: 27px;
+}

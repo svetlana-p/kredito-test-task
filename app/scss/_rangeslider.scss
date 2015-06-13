@@ -1,0 +1,51 @@
+.rangeslider,
+.rangeslider__fill {
+    background: $c-module-background;
+    display: block;
+    height: 28px;
+    width: 100%;
+}
+
+.rangeslider {
+    position: relative;
+    &:hover {
+        .rangeslider__fill {
+            background: $c-slider-fill;
+        }
+    }
+}
+
+.rangeslider--disabled {
+    opacity: 0.4;
+}
+
+.rangeslider__fill {
+    background: $c-module-background-dark;
+    position: absolute;
+    top: 0;
+}
+
+.rangeslider__handle {
+    background: $c-blue;
+    border-radius: $border-radius;
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    position: absolute;
+    top: -2px;
+    width: percentage(105 / 550);
+    &:active,
+    &:hover {
+        background: $c-light-blue;
+    }
+}
+
+
+input[type="range"] {
+    &:focus,
+    &:active {
+        & + .rangeslider .rangeslider__fill {
+            background: #9ad5ef;
+        }
+    }
+}
